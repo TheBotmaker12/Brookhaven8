@@ -1,0 +1,74 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Criminal X| Brookhaven",
+   LoadingTitle = "The official script",
+   LoadingSubtitle = "by @Porman",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "CriminalX|Brookhaven Keysystem",
+      Subtitle = "Made by @Porman",
+      Note = "@Porman Made this script",
+      FileName = "input key below", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Brookhaven2023", "Wolfpaq2023"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+
+
+Rayfield:Notify({
+   Title = "Criminalx|Brookhaven",
+   Content = "Join the discord https://discord.gg/crimianlx",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local Tab = Window:CreateTab("Arceus x!")
+local Section = Tab:CreateSection("Arceus x UI")
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab = Window:CreateTab("Hubs")
+local Section = Tab:CreateSection("Tark Hub")
+
+local Button = Tab:CreateButton({
+   Name = "Tark Hub",
+   Callback = function()
+      loadstring(game:HttpGet(('https://raw.githubusercontent.com/tark-w/script/main/TarkHub.lua%20(1).txt'),true))()
+      
+   end
+})
+
+local Tab = Window:CreateTab("Admins")
+local Section = Tab:CreateSection("Infinite yield")
+
+
+local Tab = Window:CreateTab("Information")
+
+local Label = Tab:CreateLabel("Script Information")
+
+local Paragraph = Tab:CreateParagraph({Title = "Brookhaven Information", Content = "The Owner of the script is @Porman"})
