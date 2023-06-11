@@ -78,4 +78,6 @@ local Tab = Window:CreateTab("Weaponds")
 
 local Label = Tab:CreateLabel("Props")
 
-local Label = Tab:CreateLabel("Testing")
+local Label = Tab:CreateLabel("Sniper")
+
+local Label = Tab:CreateLabel("Others")
