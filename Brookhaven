@@ -74,10 +74,5 @@ local Label = Tab:CreateLabel("Script Information")
 local Paragraph = Tab:CreateParagraph({Title = "Brookhaven Information", Content = "The Owner of the script is @Porman"})
 
 
-local Tab = Window:CreateTab("Weaponds")
-
-local Label = Tab:CreateLabel("Props")
-
-local Label = Tab:CreateLabel("Sniper")
-
-local Label = Tab:CreateLabel("Others")
+local Tab = Window:CreateTab("Other")
+local Section = Tab:CreateSection("Talk Player")
