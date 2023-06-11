@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Criminal X| Brookhaven",
+   Name = "Porman's Utility| Brookhaven",
    LoadingTitle = "The official script",
    LoadingSubtitle = "by @Porman",
    ConfigurationSaving = {
@@ -15,7 +15,7 @@ local Window = Rayfield:CreateWindow({
    },
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "CriminalX|Brookhaven Keysystem",
+      Title = "Porman Utlity|Brookhaven Keysystem",
       Subtitle = "Made by @Porman",
       Note = "@Porman Made this script",
       FileName = "input key below", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
@@ -28,7 +28,7 @@ local Window = Rayfield:CreateWindow({
 
 
 Rayfield:Notify({
-   Title = "Criminalx|Brookhaven",
+   Title = "Porman Utility|Brookhaven",
    Content = "Join the discord https://discord.gg/crimianlx",
    Duration = 6.5,
    Image = 4483362458,
@@ -82,3 +82,5 @@ local Tab = Window:CreateTab("Avatar")
 local Label = Tab:CreateLabel("Rainbow Section")
 
 local Label = Tab:CreateLabel("Copy Avatars")
+
+local Tab = Window:CreateTab("Abuse")
