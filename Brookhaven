@@ -76,3 +76,5 @@ local Paragraph = Tab:CreateParagraph({Title = "Brookhaven Information", Content
 
 local Tab = Window:CreateTab("Other")
 local Section = Tab:CreateSection("Talk Player")
+
+local Tab = Window:CreateTab("Coming Soon!")
