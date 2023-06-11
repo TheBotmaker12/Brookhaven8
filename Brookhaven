@@ -83,4 +83,7 @@ local Label = Tab:CreateLabel("Rainbow Section")
 
 local Label = Tab:CreateLabel("Copy Avatars")
 
+local Label = Tab:CreateLabel("Accessories")
+local Paragraph = Tab:CreateParagraph({Title = "Whats this about?", Content = "Get Limiteds!"})
+
 local Tab = Window:CreateTab("Abuse")
