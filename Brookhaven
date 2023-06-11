@@ -79,4 +79,4 @@ local Section = Tab:CreateSection("Props")
 
 local Label = Tab:CreateLabel("Sniper")
 
-local Label = Tab:CreateLabel("Regular Guns")
+local Paragraph = Tab:CreateParagraph("This is the Most awsome place to be!")
