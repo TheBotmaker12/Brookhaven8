@@ -72,3 +72,5 @@ local Label = Tab:CreateLabel("Copy Avatars")
 local Label = Tab:CreateLabel("Accessories")
 
 local Tab = Window:CreateTab("Abuse")
+
+local Tab = Window:CreateTab("Home", 1109185770335518792)
