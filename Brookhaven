@@ -27,20 +27,6 @@ local Window = Rayfield:CreateWindow({
 
 
 
-Rayfield:Notify({
-   Title = "Porman Utility|Brookhaven",
-   Content = "Join the discord https://discord.gg/crimianlx",
-   Duration = 6.5,
-   Image = 4483362458,
-   Actions = { -- Notification Buttons
-      Ignore = {
-         Name = "Okay!",
-         Callback = function()
-         print("The user tapped Okay!")
-      end
-   },
-},
-})
 
 local Tab = Window:CreateTab("Arceus x!")
 local Section = Tab:CreateSection("Arceus x UI")
@@ -84,6 +70,5 @@ local Label = Tab:CreateLabel("Rainbow Section")
 local Label = Tab:CreateLabel("Copy Avatars")
 
 local Label = Tab:CreateLabel("Accessories")
-local Paragraph = Tab:CreateParagraph({Title = "Whats this about?", Content = "Get Limiteds!"})
 
 local Tab = Window:CreateTab("Abuse")
