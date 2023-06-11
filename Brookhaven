@@ -75,8 +75,7 @@ local Paragraph = Tab:CreateParagraph({Title = "Brookhaven Information", Content
 
 
 local Tab = Window:CreateTab("Weaponds")
-local Section = Tab:CreateSection("Props")
 
-local Paragraph = Tab:CreateParagraph("This is the Most awsome place to be!")
+local Label = Tab:CreateLabel("Props")
 
 local Label = Tab:CreateLabel("Testing")
