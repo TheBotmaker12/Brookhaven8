@@ -35,8 +35,9 @@ local Tab = Window:CreateTab("Main")
 local Section = Tab:CreateSection("Admin")
 
 local Button = Tab:CreateButton({
-   Name = "Iy",
+   Name = "Testing",
    Callback = function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-      end
+      
+   end
 })
