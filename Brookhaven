@@ -31,10 +31,13 @@ local Label = Tab:CreateLabel("Information")
 
 local Paragraph = Tab:CreateParagraph({Title="Pormans Utility Information", Content = "The owner of the script is @PING=MUTE"})
 
+
+
 local Tab = Window:CreateTab("Main")
-local Section = Tab:CreateSection("Admin")
+
+local Label = Tab:CreateLabel("IY")
 local Button = Tab:CreateButton({
-   Name ="Testing",
+   Name = "Testing",
    Callback = function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
       
