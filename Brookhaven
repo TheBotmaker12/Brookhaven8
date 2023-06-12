@@ -73,6 +73,8 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("Avatar", 4483362458)
 
+local Tab = Window:CreateTab("Car Settings",  4483362458)
+local Section = Tab:CreateSection("Rainbow Car", 4483362458)
 Rayfield:LoadConfiguration()
 
 
