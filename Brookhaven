@@ -75,3 +75,5 @@ local Tab = Window:CreateTab("Abuse")
 
 local Tab = Window:CreateTab("Main")
 local Section = Tab:CreateSection("Coming soon!")
+
+local Tab = Window:CreateTab("Instant")
