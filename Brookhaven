@@ -1,5 +1,3 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Pormans Utility| Brookhaven Remake",
    LoadingTitle = "Porman Utility Presents",
@@ -35,3 +33,9 @@ local Paragraph = Tab:CreateParagraph({Title="Pormans Utility Information", Cont
 local Tab = Window:CreateTab("Main")
 local Section = Tab:CreateSection("Admin")
 
+local Button = Tab:CreateButton({
+   Name = "Iy",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      end,
+})
