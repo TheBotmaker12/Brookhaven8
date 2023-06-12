@@ -62,8 +62,17 @@ local Button = Tab:CreateButton({
   
     end
 })
+local Label = Tab:CreateLabel("IceHub")
 
+local Button = Tab:CreateButton({
+    Name = "IceHub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+        
+    end
+})
 
 Rayfield:LoadConfiguration()
+
 
 
