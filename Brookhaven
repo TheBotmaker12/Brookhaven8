@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-    Name = "Pormans Utility| Brookhaven remake",
+    Name = "Porman Utility| Brookhaven remake",
     LoadingTitle = "Porman Utility Presents",
     LoadingSubtitle = "by @Porman",
     ConfigurationSaving = {
@@ -15,7 +15,7 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = true, -- Set this to true to use our key system
     KeySettings = {
-       Title = "Porman Utility| Keysystem",
+       Title = "Porman Utility| KeySystem",
        Subtitle = "Key System",
        Note = "No method of obtaining the key is provided",
        FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
@@ -24,9 +24,9 @@ local Window = Rayfield:CreateWindow({
        Key = {"Brookhavenremake2023", "Wolfpaq2023", "SoonV2Brook"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
-Rayfield:Notify({
-    Title = "Porman Utility Discord Notify",
-    Content = "You have executed the script",
+ Rayfield:Notify({
+    Title = "Porman Utility Discord notify",
+    Content = "You have executed the script, join the discord https://discord.gg/pormans-utility",
     Duration = 6.5,
     Image = 4483362458,
     Actions = { -- Notification Buttons
@@ -39,42 +39,28 @@ Rayfield:Notify({
  },
  })
 
+ local Tab = Window:CreateTab("Main", 4483362458)
+ 
+local Label = Tab:CreateLabel("Information")
 
-
-
-local Tab = Window:CreateTab("test")
-local Button = Tab:CreateButton({
-    Name = "Test",
-    Callback = function()
-    
-    end
-})
-
+local Paragraph = Tab:CreateParagraph({Title ="Pormans Utility Brook info", Content = "This is the official script"})
 
 local Tab = Window:CreateTab("Hubs", 4483362458)
 
-local Label = Tab:CreateLabel("IceHub")
+local Label = Tab:CreateLabel("Unfair hub")
 
 local Button = Tab:CreateButton({
-    Name = "Unfair hub",
+    Name = "Unfair Hub",
     Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
-  
-    end
-})
-local Label = Tab:CreateLabel("IceHub")
 
-local Button = Tab:CreateButton({
-    Name = "IceHub",
-    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/TheBotmaker12/Brookhaven8/main/Brookhaven'))()        
+        
     end
 })
 
-local Tab = Window:CreateTab("Avatar", 4483362458)
-
-local Tab = Window:CreateTab("Car Settings",  4483362458)
-local Section = Tab:CreateSection("Rainbow Car", 4483362458)
-Rayfield:LoadConfiguration()
+local Tab = Window:CreateTab("Avatar")
 
 
+local Tab = Window:CreateTab("Car Settings")
+
+local Tab = Window:CreateTab("Home Settings ")
