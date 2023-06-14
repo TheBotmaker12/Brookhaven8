@@ -66,6 +66,19 @@ local Tab = Window:CreateTab("Car Settings")
 local Tab = Window:CreateTab("Home Settings ")
 
 local Tab = Window:CreateTab("Fun")
+local Slider = Tab:CreateSlider({
+    Name = "JumpPower",
+    Range = {0,100},
+    Increment = 10,
+    Suffix = "",
+    CurrentValue = 16,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+       
+        
+    end
+})
+
 
 local Tab = Window:CreateTab("Other")
 
@@ -83,18 +96,6 @@ local Slider = Tab:CreateSlider({
 
 local Label = Tab:CreateLabel("JumpPower")
 
-local Slider = Tab:CreateSlider({
-    Name = "JumpPower",
-    Range = {0,100},
-    Increment = 10,
-    Suffix = "",
-    CurrentValue = 16,
-    Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-       
-        
-    end
-})
 
 local Tab = Window:CreateTab("Tools")
 
