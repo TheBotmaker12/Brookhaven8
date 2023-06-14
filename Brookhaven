@@ -70,3 +70,21 @@ local Tab = Window:CreateTab("Fun")
 local Tab = Window:CreateTab("Other")
 
 local Tab = Window:CreateTab("Tools")
+
+
+local Tab = Window:CreateTab("Testing")
+
+local Slider = Tab:CreateSlider({
+    Name = "Walkspeed Slider",
+    Range = {0, 100},
+    Increment = 10,
+    Suffix = "",
+    CurrentValue = 16, -- Set an initial value for walkspeed
+    Flag = "WalkspeedSlider", -- Ensure a unique flag for the slider
+    Callback = function(Value)
+        -- The function that takes place when the slider changes
+        -- The variable (Value) is a number which correlates to the value the slider is currently at
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end,
+ })
+ 
