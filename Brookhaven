@@ -68,3 +68,5 @@ local Tab = Window:CreateTab("Home Settings ")
 local Tab = Window:CreateTab("Fun")
 
 local Tab = Window:CreateTab("Other")
+
+local Tab = Window:CreateTab("Tools")
