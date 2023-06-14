@@ -67,20 +67,22 @@ local Tab = Window:CreateTab("Home Settings ")
 
 local Tab = Window:CreateTab("Fun")
 local Slider = Tab:CreateSlider({
-    Name = "Jumppower",
-    Range = {0, 100},
-    Increment = 10,
+    Name = "Height Slider",
+    Range = {0, 10},
+    Increment = 1,
     Suffix = "",
-    CurrentValue = 50, -- Set an initial value for jump power
-    Flag = "Jumppower", -- Ensure a unique flag for the slider
+    CurrentValue = 5, -- Set an initial value for height
+    Flag = "HeightSlider", -- Ensure a unique flag for the slider
     Callback = function(Value)
         -- The function that takes place when the slider changes
         -- The variable (Value) is a number which correlates to the value the slider is currently at
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+        local humanoid = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.HipHeight = Value
+        end
     end,
  })
  
-
 local Tab = Window:CreateTab("Other")
 
 local Slider = Tab:CreateSlider({
