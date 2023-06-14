@@ -81,5 +81,20 @@ local Slider = Tab:CreateSlider({
     end
 })
 
+local Label = Tab:CreateLabel("JumpPower")
+
+local Slider = Tab:CreateSlider({
+    Name = "JumpPower",
+    Range = {0,100},
+    Increment = 10,
+    Suffix = "",
+    CurrentValue = 16,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+       
+        
+    end
+})
+
 local Tab = Window:CreateTab("Tools")
 
