@@ -67,18 +67,19 @@ local Tab = Window:CreateTab("Home Settings ")
 
 local Tab = Window:CreateTab("Fun")
 local Slider = Tab:CreateSlider({
-    Name = "JumpPower",
-    Range = {0,1000},
+    Name = "Jumppower",
+    Range = {0, 100},
     Increment = 10,
     Suffix = "",
-    CurrentValue = 16,
+    CurrentValue = 50, -- Set an initial value for jump power
+    Flag = "Jumppower", -- Ensure a unique flag for the slider
     Callback = function(Value)
+        -- The function that takes place when the slider changes
+        -- The variable (Value) is a number which correlates to the value the slider is currently at
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-       
-        
-    end
-})
-
+    end,
+ })
+ 
 
 local Tab = Window:CreateTab("Other")
 
@@ -94,7 +95,6 @@ local Slider = Tab:CreateSlider({
     end
 })
 
-local Label = Tab:CreateLabel("JumpPower")
 
 
 local Tab = Window:CreateTab("Tools")
