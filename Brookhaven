@@ -56,3 +56,21 @@ local Button = Tab:CreateButton({
 
     end
 })
+
+local Label = Tab:CreateLabel("Arceus x Ui")
+
+local Button = Tab:CreateButton({
+    Name = "Arceus x Gui",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+        
+    end
+})
+
+local Label = Tab:CreateButton({
+    Name = "Synapse Remake",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
+        
+    end
+})
