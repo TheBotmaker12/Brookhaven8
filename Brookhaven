@@ -48,3 +48,10 @@ local Label = Tab:CreateLabel("Script Info")
 local Paragraph = Tab:CreateParagraph({Title = "Pormans Script Info", Content = "The official V1 of the script"})
 
 local Tab = Window:CreateTab("Hubs/UI", 4483362458)
+
+local Button = Tab:CreateButton({
+    Name = "Unfair Hub",
+    Callback = function()
+        
+    end
+})
