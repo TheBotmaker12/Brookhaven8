@@ -77,4 +77,7 @@ local Button = Tab:CreateButton({
     end
 })
 
-local Tab = Window:CreateTab("Car Settings", 4483362458) 
+local Tab = Window:CreateTab("Car Settings", 4483362458)
+
+
+local Tab = Window:CreateTab("Home Settings", 4483362458)
