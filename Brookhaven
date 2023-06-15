@@ -67,7 +67,9 @@ local Button = Tab:CreateButton({
     end
 })
 
-local Label = Tab:CreateButton({
+local Label = Tab:CreateLabel("Synapse Remake")
+
+local Button = Tab:CreateButton({
     Name = "Synapse Remake",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
