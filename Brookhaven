@@ -96,3 +96,6 @@ local Button = Tab:CreateButton({
         
     end
 })
+
+
+local Tab = Window:CreateTab("Other")
